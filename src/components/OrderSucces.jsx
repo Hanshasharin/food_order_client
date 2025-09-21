@@ -1,3 +1,35 @@
+// import React from "react";
+// import { useSearchParams, Link } from "react-router-dom";
+
+// const OrderSuccess = () => {
+//   const [searchParams] = useSearchParams();
+//   const sessionId = searchParams.get("session_id");
+
+//   return (
+//     <div className="flex flex-col items-center justify-center min-h-screen bg-base-200">
+//       <div className="bg-white shadow-lg rounded-lg p-8 text-center">
+//         <h1 className="text-3xl font-bold text-green-600 mb-4">
+//           🎉 Payment Successful!
+//         </h1>
+//         <p className="text-gray-700 mb-2">
+//           Thank you for your order.
+//         </p>
+//         {sessionId && (
+//           <p className="text-sm text-gray-500 mb-4">
+//             Stripe Session ID: <span className="font-mono">{sessionId}</span>
+//           </p>
+//         )}
+
+//         <Link to="/profile" className="btn btn-primary">
+//           Go to Profile / Orders
+//         </Link>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default OrderSuccess;
+
 import React, { useEffect, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 
